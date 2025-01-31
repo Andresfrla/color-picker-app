@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Barlow } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "./_components/_theme-provider/theme-provider";
 
 const barlow = Barlow({
   weight: ["400", "700"],
@@ -19,11 +20,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html 
+      lang="en"
+      className="light"
+      style={{ colorScheme: "light" }}
+      suppressHydrationWarning
+      >
       <body
         className={`${barlow.className}`}
       >
-        {children}
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem={false}
+            disableTransitionOnChange
+            >
+            {children}
+          </ThemeProvider>
       </body>
     </html>
   );
