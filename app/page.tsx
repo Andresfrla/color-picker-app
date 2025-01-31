@@ -3,6 +3,7 @@ import { useState } from "react"
 import Navbar from "./_components/_navbar/navbar"
 import RadioColor from "./_components/_radioColor/radioColor"
 import ColorInput from "./_components/ColorInput/ColorInput"
+import ColorVariationCards from "./_components/ColorVariation/ColorVariation"
 
 export default function Home() {
   const [selectedColor, setSelectedColor] = useState("#4f91e8")
@@ -16,7 +17,7 @@ export default function Home() {
           Tailwind CSS
         </h1>
         <h3 className="text-4xl">Color Palette Generator</h3>
-        <p className="text-xl w-1/2 mb-10">
+        <p className="text-xl w-1/2 pb-20">
           Pick a color, enter a hexcode or change the HSL values to create a color palette
         </p>
         
@@ -24,8 +25,9 @@ export default function Home() {
           selectedColor={selectedColor}
           onColorChange={setSelectedColor}
         />
-        
+
         <RadioColor />
+        <ColorVariationCards />
       </div>
     </div>
   )
