@@ -4,18 +4,18 @@ import { ModeToggle } from '../_modeToogle/modeToogle'
 
 const navbar = () => {
   return (
-    <nav className="flex items-center mb-20 space-x-10 justify-between w-full px-7 border-b py-5 sm:py-2">
-        <div className="flex items-center py-5">
-          <div className="relative w-10 h-10 md:w-14 md:h-14">
-            <Image 
-              src={icon}
-              alt="Icon"
-              fill
-              sizes="(max-width: 768px) 64px, 96px"
-              className="object-cover"
-            />
-          </div>
-        <h2 className="text-3xl ml-5 font-semibold">Color picker</h2>
+    <nav className="flex items-center justify-between w-full px-4 py-5 border-b sm:px-6 md:px-7 lg:px-10">
+      <div className="flex items-center space-x-4 sm:space-x-6">
+        <div className="relative w-12 h-12 md:w-16 md:h-16">
+          <Image 
+            src={icon}
+            alt="Icon"
+            fill
+            sizes="(max-width: 768px) 48px, (max-width: 1024px) 64px, 96px"
+            className="object-cover"
+          />
+        </div>
+        <h2 className="text-2xl sm:text-3xl font-semibold">Color picker</h2>
       </div>
 
       <ModeToggle />

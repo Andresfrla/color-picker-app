@@ -6,7 +6,7 @@ const RadioColor = () => {
     <div className="pt-10">
     <RadioGroup defaultValue="comfortable">
       <div className="flex items-center space-x-2">
-        <RadioGroupItem value="default" id="r1" className="size-10"/>
+        <RadioGroupItem value="default" id="r1" className="size-7 !bg-[#4f91e8] data-[state=checked]:bg-none border-none"/>
         <Label htmlFor="r1" className="text-md">Color</Label>
       </div>
     </RadioGroup>
