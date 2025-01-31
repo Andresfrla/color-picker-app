@@ -1,4 +1,6 @@
 import Navbar from "./_components/_navbar/navbar";
+import RadioColor from "./_components/_radioColor/radioColor";
+import radioColor from "./_components/_radioColor/radioColor";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
         <p className="text-xl w-1/2">
           Pick a color, enter a hexcode or change the HSL values to create a color palette
         </p>
+
+        <RadioColor />
       </div>
     </div>
   );

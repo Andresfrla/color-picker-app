@@ -5,7 +5,7 @@ import { ModeToggle } from '../_modeToogle/modeToogle'
 const navbar = () => {
   return (
     <nav className="flex items-center mb-20 space-x-10 justify-between w-full px-7 border-b py-5 sm:py-2">
-        <div className="flex items-center">
+        <div className="flex items-center py-5">
           <div className="relative w-10 h-10 md:w-14 md:h-14">
             <Image 
               src={icon}
