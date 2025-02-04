@@ -6,6 +6,8 @@ import ColorInput from "./_components/ColorInput/ColorInput"
 import ColorVariationCards from "./_components/ColorVariation/ColorVariation"
 import { ChartExample } from "./_components/Chart/Chart"
 import { CardExample } from "./_components/CardExample/CardExample"
+import { CalendarExample } from "./_components/CalendarExample/CalendarExample"
+import { LoginForm } from "@/components/login-form"
 
 export default function Home() {
   const [selectedColor, setSelectedColor] = useState("#4f91e8")
@@ -30,11 +32,13 @@ export default function Home() {
 
         <RadioColor />
         <ColorVariationCards />
-        <div>
+        <h4 className="pt-10 text-3xl">Examples: </h4>
+        <div className="flex flex-row space-x-5 pt-20">
           <ChartExample /> 
           <CardExample />
-
+          <CalendarExample />
         </div>
+          <LoginForm />
       </div>
     </div>
   )
