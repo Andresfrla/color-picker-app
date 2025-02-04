@@ -4,6 +4,8 @@ import Navbar from "./_components/_navbar/navbar"
 import RadioColor from "./_components/_radioColor/radioColor"
 import ColorInput from "./_components/ColorInput/ColorInput"
 import ColorVariationCards from "./_components/ColorVariation/ColorVariation"
+import { ChartExample } from "./_components/Chart/Chart"
+import { CardExample } from "./_components/CardExample/CardExample"
 
 export default function Home() {
   const [selectedColor, setSelectedColor] = useState("#4f91e8")
@@ -28,6 +30,11 @@ export default function Home() {
 
         <RadioColor />
         <ColorVariationCards />
+        <div>
+          <ChartExample /> 
+          <CardExample />
+
+        </div>
       </div>
     </div>
   )
