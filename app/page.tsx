@@ -10,6 +10,7 @@ import { CalendarExample } from "./_components/CalendarExample/CalendarExample"
 import { LoginForm } from "@/components/login-form"
 import ButtonTypes from "./_components/ButtonTypes/ButtonTypes"
 import CardWithPicture from "./_components/CardWithPicture/CardWithPicture"
+import CardWithPicture2 from "./_components/CardWithPicture1/CardWithPicture2"
 
 
 
@@ -43,10 +44,10 @@ export default function Home() {
           <CalendarExample />
         </div>
         <div className="flex flex-row space-x-5 pt-20">
+          <CardWithPicture />
           <LoginForm />
           <ButtonTypes/>
-          <CardWithPicture />
-          
+          <CardWithPicture2 />
         </div>
       </div>
     </div>

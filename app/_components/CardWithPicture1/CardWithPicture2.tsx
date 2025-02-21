@@ -1,9 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Image from "next/image"
-import womenSpeaking from "@/public/womenSpeaking.png"
-const CardWithPicture = () => {
+import manReading from "@/public/manReading.png"
+const CardWithPicture2 = () => {
   return (
-    <Card className="h-full bg-[#3B74D9] relative overflow-hidden">
+    <Card className="h-full bg-[#94C5FF] relative overflow-hidden text-black">
         <svg
         className="absolute inset-0 w-full h-full"
         viewBox="0 0 100 100"
@@ -23,20 +23,22 @@ const CardWithPicture = () => {
         />
         </svg>
     <CardHeader>    
-        <CardTitle>Gain control</CardTitle>
+        <CardTitle>Research and Investigation</CardTitle>
     </CardHeader>
     <CardContent className="px-10 relative z-10">
     <Image
-      src={womenSpeaking}
+      src={manReading}
       className="rounded-3xl"
-      alt="Women speaking"
+      alt="Man reading"
       width={300}
       height={200}
     />
-    <p className="py-10">Make thinks different</p>
+    <p className="py-10">
+        Try to learn new things
+    </p>
     </CardContent>
     </Card>
   )
 }
 
-export default CardWithPicture
+export default CardWithPicture2
