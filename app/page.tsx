@@ -8,6 +8,8 @@ import { ChartExample } from "./_components/Chart/Chart"
 import { CardExample } from "./_components/CardExample/CardExample"
 import { CalendarExample } from "./_components/CalendarExample/CalendarExample"
 import { LoginForm } from "@/components/login-form"
+import ButtonTypes from "./_components/ButtonTypes/ButtonTypes"
+
 
 export default function Home() {
   const [selectedColor, setSelectedColor] = useState("#4f91e8")
@@ -38,7 +40,11 @@ export default function Home() {
           <CardExample />
           <CalendarExample />
         </div>
+        <div className="flex flex-row space-x-5 pt-20">
           <LoginForm />
+          <ButtonTypes/>
+
+        </div>
       </div>
     </div>
   )
