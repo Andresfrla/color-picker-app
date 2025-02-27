@@ -12,6 +12,7 @@ import ButtonTypes from "./_components/ButtonTypes/ButtonTypes"
 import CardWithPicture from "./_components/CardWithPicture/CardWithPicture"
 import CardWithPicture2 from "./_components/CardWithPicture1/CardWithPicture2"
 import SubscriptionCard from "./_components/SubscriptionCard/SubscriptionCard"
+import CustomSeparator from "./_components/Separator/Separator"
 
 
 
@@ -44,6 +45,7 @@ export default function Home() {
           <ChartExample /> 
           <CardExample />
           <CalendarExample />
+          <CustomSeparator />
         </div>
         <div className="flex flex-row space-x-5 pt-20">
           <CardWithPicture />
