@@ -11,8 +11,8 @@ import { LoginForm } from "@/components/login-form"
 import ButtonTypes from "./_components/ButtonTypes/ButtonTypes"
 import CardWithPicture from "./_components/CardWithPicture/CardWithPicture"
 import CardWithPicture2 from "./_components/CardWithPicture1/CardWithPicture2"
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
-import { MdPeopleOutline } from "react-icons/md";
+import SubscriptionCard from "./_components/SubscriptionCard/SubscriptionCard"
+
 
 
 
@@ -50,18 +50,7 @@ export default function Home() {
           <LoginForm />
           <ButtonTypes/>
           
-          <Card className="h-full w-[250px]">
-            <CardHeader className="flex flex-row justify-between">
-              <h4 className="text-xl">Subcriptions</h4>
-              <MdPeopleOutline />
-            </CardHeader>
-            <CardContent className="flex mb-1">
-              <p className="font-bold text-4xl">+ 2350</p>
-            </CardContent>
-            <CardFooter>
-              <p className="text-sm">+180.1% from last month</p>
-            </CardFooter>
-          </Card>
+          <SubscriptionCard/>
           
           <CardWithPicture2 />
         </div>
