@@ -41,20 +41,37 @@ export default function Home() {
         <RadioColor />
         <ColorVariationCards />
         <h4 className="pt-10 text-3xl">Examples: </h4>
-        <div className="flex flex-row space-x-5 pt-20">
-          <ChartExample /> 
-          <CardExample />
-          <CalendarExample />
-          <CustomSeparator />
-        </div>
-        <div className="flex flex-row space-x-5 pt-20">
-          <CardWithPicture />
-          <LoginForm />
-          <ButtonTypes/>
-          
-          <SubscriptionCard/>
-          
-          <CardWithPicture2 />
+        <div className="min-h-screen w-full flex items-center justify-center">
+          <div className="grid h-full w-full grid-cols-4 grid-rows-2 gap-3 items-center">
+            <div className="col-span-2 row-span-1">
+              <ChartExample /> 
+            </div>
+            <div className="col-span-1 row-span-1">
+              <CardExample />
+            </div>
+            <div className="col-span-1 row-span-1">
+              <CardWithPicture />
+            </div>
+
+            <div className="col-span-1 row-span-1">
+              <CardWithPicture2 />
+              
+            </div>
+            <div className="col-span-1 row-span-1">
+              <LoginForm />
+            </div>
+            <div className="col-span-1 row-span-1 space-y-5">
+              <ButtonTypes/>   
+              <SubscriptionCard/>   
+            </div>
+            <div className="col-span-1 row-span-1">
+              <div className="flex flex-col items-center justify-center space-y-5">
+                <CalendarExample />
+                <CustomSeparator />
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>

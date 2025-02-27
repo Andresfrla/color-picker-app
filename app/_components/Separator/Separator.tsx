@@ -2,11 +2,11 @@ import { Separator } from "@/components/ui/separator";
 
 const CustomSeparator = () => {
   return (
-    <div>
+    <div className="w-60">
       <div className="space-y-1">
         <h4 className="text-sm font-medium leading-none">Radix Primitives</h4>
         <p className="text-sm text-muted-foreground">
-          An open-source UI component library.
+          An open-source UI.
         </p>
       </div>
       <Separator className="my-4" />
@@ -15,7 +15,6 @@ const CustomSeparator = () => {
         <Separator orientation="vertical" />
         <div>Docs</div>
         <Separator orientation="vertical" />
-        <div>Source</div>
       </div>
     </div>
   );

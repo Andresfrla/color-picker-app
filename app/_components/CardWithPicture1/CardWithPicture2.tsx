@@ -3,7 +3,7 @@ import Image from "next/image"
 import manReading from "@/public/manReading.png"
 const CardWithPicture2 = () => {
   return (
-    <Card className="h-full bg-[#94C5FF] relative overflow-hidden text-black">
+    <Card className="bg-[#94C5FF] relative overflow-hidden text-black ">
         <svg
         className="absolute inset-0 w-full h-full"
         viewBox="0 0 100 100"
@@ -25,7 +25,7 @@ const CardWithPicture2 = () => {
     <CardHeader>    
         <CardTitle>Research and Investigation</CardTitle>
     </CardHeader>
-    <CardContent className="px-10 relative z-10">
+    <CardContent className="px-10 relative z-10 flex flex-col justify-center">
     <Image
       src={manReading}
       className="rounded-3xl"

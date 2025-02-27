@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 const ButtonTypes = () => {
   return (
-    <Card className="flex flex-col h-full">
+    <Card className="flex flex-col">
         <CardHeader>
             <CardTitle>Different types of Buttons</CardTitle>
         </CardHeader>

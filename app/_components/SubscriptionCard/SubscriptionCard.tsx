@@ -3,7 +3,7 @@ import { MdPeopleOutline } from "react-icons/md";
 
 const SubscriptionCard = () => {
   return (
-    <Card className="h-full w-[250px]">
+    <Card>
         <CardHeader className="flex flex-row justify-between">
             <h4 className="text-xl">Subcriptions</h4>
             <MdPeopleOutline />

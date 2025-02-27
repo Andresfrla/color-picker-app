@@ -28,7 +28,7 @@ const ColorVariationCards = () => {
 
   return (
     <div className="w-full max-w-full p-4">
-      <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+      <div className="flex flex-wrap gap-4 justify-center">
         {colorVariations.map((color) => (
           <div
             key={color.shade}
