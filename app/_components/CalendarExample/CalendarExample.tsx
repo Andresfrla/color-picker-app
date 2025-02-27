@@ -17,6 +17,7 @@ export function CalendarExample() {
       selected={date}
       onSelect={setDate}
       className="rounded-md border shadow h-80"
+      suppressHydrationWarning
     />
   );
 }
